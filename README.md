@@ -18,7 +18,7 @@ cd worldclockx
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-pPORT=5050 python app.py
+PORT=5050 python app.py
 
 👨‍💻 Author
 
