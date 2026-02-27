@@ -1,0 +1,122 @@
+{
+  "items": [
+    {
+      "country": "India",
+      "cities": [
+        { "city": "Chennai", "tz": "Asia/Kolkata" },
+        { "city": "Bengaluru", "tz": "Asia/Kolkata" },
+        { "city": "Mumbai", "tz": "Asia/Kolkata" },
+        { "city": "Delhi", "tz": "Asia/Kolkata" },
+        { "city": "Kolkata", "tz": "Asia/Kolkata" },
+        { "city": "Hyderabad", "tz": "Asia/Kolkata" }
+      ]
+    },
+    {
+      "country": "United States",
+      "cities": [
+        { "city": "New York", "tz": "America/New_York" },
+        { "city": "Chicago", "tz": "America/Chicago" },
+        { "city": "Denver", "tz": "America/Denver" },
+        { "city": "Los Angeles", "tz": "America/Los_Angeles" },
+        { "city": "Phoenix", "tz": "America/Phoenix" }
+      ]
+    },
+    {
+      "country": "Canada",
+      "cities": [
+        { "city": "Toronto", "tz": "America/Toronto" },
+        { "city": "Vancouver", "tz": "America/Vancouver" },
+        { "city": "Montreal", "tz": "America/Toronto" },
+        { "city": "Calgary", "tz": "America/Edmonton" }
+      ]
+    },
+    {
+      "country": "United Kingdom",
+      "cities": [
+        { "city": "London", "tz": "Europe/London" },
+        { "city": "Manchester", "tz": "Europe/London" },
+        { "city": "Birmingham", "tz": "Europe/London" }
+      ]
+    },
+    {
+      "country": "France",
+      "cities": [
+        { "city": "Paris", "tz": "Europe/Paris" },
+        { "city": "Lyon", "tz": "Europe/Paris" },
+        { "city": "Marseille", "tz": "Europe/Paris" }
+      ]
+    },
+    {
+      "country": "Germany",
+      "cities": [
+        { "city": "Berlin", "tz": "Europe/Berlin" },
+        { "city": "Munich", "tz": "Europe/Berlin" },
+        { "city": "Hamburg", "tz": "Europe/Berlin" }
+      ]
+    },
+    {
+      "country": "United Arab Emirates",
+      "cities": [
+        { "city": "Dubai", "tz": "Asia/Dubai" },
+        { "city": "Abu Dhabi", "tz": "Asia/Dubai" }
+      ]
+    },
+    {
+      "country": "Singapore",
+      "cities": [
+        { "city": "Singapore", "tz": "Asia/Singapore" }
+      ]
+    },
+    {
+      "country": "Japan",
+      "cities": [
+        { "city": "Tokyo", "tz": "Asia/Tokyo" },
+        { "city": "Osaka", "tz": "Asia/Tokyo" },
+        { "city": "Kyoto", "tz": "Asia/Tokyo" }
+      ]
+    },
+    {
+      "country": "China",
+      "cities": [
+        { "city": "Shanghai", "tz": "Asia/Shanghai" },
+        { "city": "Beijing", "tz": "Asia/Shanghai" },
+        { "city": "Shenzhen", "tz": "Asia/Shanghai" }
+      ]
+    },
+    {
+      "country": "Australia",
+      "cities": [
+        { "city": "Sydney", "tz": "Australia/Sydney" },
+        { "city": "Melbourne", "tz": "Australia/Melbourne" },
+        { "city": "Brisbane", "tz": "Australia/Brisbane" }
+      ]
+    },
+    {
+      "country": "New Zealand",
+      "cities": [
+        { "city": "Auckland", "tz": "Pacific/Auckland" },
+        { "city": "Wellington", "tz": "Pacific/Auckland" }
+      ]
+    },
+    {
+      "country": "Brazil",
+      "cities": [
+        { "city": "Sao Paulo", "tz": "America/Sao_Paulo" },
+        { "city": "Rio de Janeiro", "tz": "America/Sao_Paulo" }
+      ]
+    },
+    {
+      "country": "South Africa",
+      "cities": [
+        { "city": "Johannesburg", "tz": "Africa/Johannesburg" },
+        { "city": "Cape Town", "tz": "Africa/Johannesburg" }
+      ]
+    },
+    {
+      "country": "Egypt",
+      "cities": [
+        { "city": "Cairo", "tz": "Africa/Cairo" }
+      ]
+    }
+  ]
+}

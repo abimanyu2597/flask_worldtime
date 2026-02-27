@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>WorldClockX</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  </head>
+  <body class="bg-globe">
+    <div class="container">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-dot"></div>
+          <div>
+            <div class="brand-name">WorldClockX</div>
+            <div class="brand-sub">World Time Dashboard • Streaming Clock</div>
+          </div>
+        </div>
+        <a class="btn btn-ghost" href="{{ url_for('dashboard') }}">Open Dashboard →</a>
+      </header>
+
+      <main class="hero">
+        <div class="hero-card">
+          <h1>Accurate world time. Live updates. Clean UI.</h1>
+          <p>
+            Search by <b>Country</b> or <b>City</b>, and view a live analog + digital clock with date.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="{{ url_for('dashboard') }}#search-country">Search by Country</a>
+            <a class="btn btn-secondary" href="{{ url_for('dashboard') }}#search-city">Search by City</a>
+          </div>
+
+          <div class="hint">
+            Tip: The dashboard also shows major world time zones, updating every second.
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <span>Built with Flask + SSE + IANA time zones</span>
+      </footer>
+    </div>
+  </body>
+</html>

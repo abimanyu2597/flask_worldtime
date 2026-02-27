@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>WorldClockX • Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  </head>
+  <body class="bg-globe" id="appRoot">
+    <div class="container">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-dot"></div>
+          <div>
+            <div class="brand-name">WorldClockX</div>
+            <div class="brand-sub">Dashboard</div>
+          </div>
+        </div>
+        <div class="top-actions">
+          <a class="btn btn-ghost" href="{{ url_for('index') }}">← Home</a>
+          <button id="btnUseLocalTz" class="btn btn-ghost">Use My Timezone</button>
+        </div>
+      </header>
+
+      <main class="grid">
+        <!-- Featured clock -->
+        <section class="card clock-card">
+          <div class="card-head">
+            <div>
+              <div class="section-title">Featured Clock</div>
+              <div class="muted" id="featuredTzLabel">Timezone: —</div>
+            </div>
+            <div class="pill" id="themePill">Theme: Default</div>
+          </div>
+
+          <div class="clock-wrap">
+            <canvas id="analogClock" width="280" height="280" aria-label="Analog clock"></canvas>
+            <div class="digital">
+              <div class="digital-time" id="digitalTime">--:--:--</div>
+              <div class="digital-date" id="digitalDate">---</div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="result-panel">
+            <div class="result-title">Selected Location</div>
+            <div class="result-grid">
+              <div>
+                <div class="muted">Country</div>
+                <div id="selCountry">—</div>
+              </div>
+              <div>
+                <div class="muted">City</div>
+                <div id="selCity">—</div>
+              </div>
+              <div>
+                <div class="muted">Timezone</div>
+                <div id="selTz">—</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Search -->
+        <section class="card search-card">
+          <div class="section-title">Search</div>
+
+          <div class="search-tabs">
+            <a class="tab" href="#search-country" id="tabCountry">By Country</a>
+            <a class="tab" href="#search-city" id="tabCity">By City</a>
+          </div>
+
+          <!-- Country search -->
+          <div id="search-country" class="search-section">
+            <div class="field">
+              <label for="countrySelect">Country</label>
+              <select id="countrySelect">
+                <option value="">Select a country</option>
+                {% for c in countries %}
+                  <option value="{{ c }}">{{ c }}</option>
+                {% endfor %}
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="citySelect">City</label>
+              <select id="citySelect" disabled>
+                <option value="">Select a city</option>
+              </select>
+            </div>
+
+            <button class="btn btn-primary w100" id="btnApplyCountryCity" disabled>
+              Show Time
+            </button>
+          </div>
+
+          <!-- City search -->
+          <div id="search-city" class="search-section">
+            <div class="field">
+              <label for="citySearch">City (type at least 2 letters)</label>
+              <input id="citySearch" placeholder="e.g., Chennai, Paris, Tokyo" autocomplete="off" />
+              <div id="citySuggest" class="suggest"></div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+          <div class="muted small">
+            Live updates are streamed from the server (SSE) once per second.
+          </div>
+        </section>
+
+        <!-- World times grid -->
+        <section class="card world-card">
+          <div class="card-head">
+            <div class="section-title">World Times</div>
+            <button class="btn btn-ghost" id="btnRefreshWorld">Refresh</button>
+          </div>
+          <div id="worldGrid" class="world-grid"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>Accuracy: IANA time zones (zoneinfo). Streaming: SSE.</span>
+      </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/sse.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/clock.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  </body>
+</html>

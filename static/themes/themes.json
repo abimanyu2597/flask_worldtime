@@ -1,0 +1,51 @@
+{
+  "__default__": {
+    "accent": "#7dd3fc",
+    "accent2": "#a78bfa",
+    "overlayLabel": "Default"
+  },
+  "countries": {
+    "India": {
+      "accent": "#f59e0b",
+      "accent2": "#22c55e",
+      "overlayLabel": "India Glow"
+    },
+    "United States": {
+      "accent": "#60a5fa",
+      "accent2": "#f87171",
+      "overlayLabel": "US Neon"
+    },
+    "France": {
+      "accent": "#93c5fd",
+      "accent2": "#fca5a5",
+      "overlayLabel": "Paris Lights"
+    },
+    "Japan": {
+      "accent": "#fb7185",
+      "accent2": "#a78bfa",
+      "overlayLabel": "Tokyo Pulse"
+    }
+  },
+  "cities": {
+    "Chennai": {
+      "accent": "#fbbf24",
+      "accent2": "#34d399",
+      "overlayLabel": "Chennai"
+    },
+    "New York": {
+      "accent": "#60a5fa",
+      "accent2": "#f87171",
+      "overlayLabel": "New York"
+    },
+    "Paris": {
+      "accent": "#93c5fd",
+      "accent2": "#fca5a5",
+      "overlayLabel": "Paris"
+    },
+    "Tokyo": {
+      "accent": "#fb7185",
+      "accent2": "#a78bfa",
+      "overlayLabel": "Tokyo"
+    }
+  }
+}
